@@ -31,11 +31,7 @@ interface State {
 }
 
 class SignIn2Component extends React.Component<SignIn2Props> {
-  static navigationOptions = {
-    header: {
-       visible: false,
-    }
-  }
+ 
 
   public state: State = {
     formData: undefined,

@@ -120,6 +120,15 @@ class SignUpForm2Component extends React.Component<SignUpForm2Props, State> {
             validator={EmailValidator}
             onChangeText={this.onEmailInputTextChange}
           />
+            <ValidationInput
+            style={themedStyle.emailInput}
+            textStyle={textStyle.paragraph}
+            autoCapitalize='none'
+            placeholder='Confirm Email'
+            icon={EmailIconFill}
+            validator={EmailValidator}
+            onChangeText={this.onEmailInputTextChange}
+          />
           <ValidationInput
             style={themedStyle.passwordInput}
             textStyle={textStyle.paragraph}
