@@ -16,7 +16,7 @@ import {
   ScrollableAvoidKeyboard,
   textStyle,
 } from '@src/components/common';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 
 interface ComponentProps {
   onSignInPress: (formData: SignInForm2Data) => void;
@@ -58,17 +58,8 @@ class SignIn2Component extends React.Component<SignIn2Props> {
 
     return (
       <ScrollableAvoidKeyboard style={themedStyle.container}>
-        <View style={themedStyle.headerContainer}>
-          <Text
-            style={themedStyle.helloLabel}
-            category='h1'>
-            Pato Buy n' SeLL
-          </Text>
-          <Text
-            style={themedStyle.signInLabel}
-            category='s1'>
-            Sign in to your account
-          </Text>
+        <View>
+        <Image style={{width: '100%', height: 200}} source={require('../../../../assets/images/login/buy-and-sell-online-philippines.jpg')} />
         </View>
         <SignInForm2
           style={themedStyle.formContainer}
